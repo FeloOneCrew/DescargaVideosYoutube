@@ -177,7 +177,7 @@ class Frame(tk.Frame):
                 self.nomCanc = yt.title
                 self.autor= yt.author
                 self.Views= yt.views
-                impr= self.nomCanc + " has been successfully downloaded."
+                impr= self.nomCanc + " El audio se descargó correctamente."
                 mensaje = impr
                 messagebox.showinfo(titulo, mensaje)
                 
