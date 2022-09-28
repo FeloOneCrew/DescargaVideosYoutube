@@ -113,6 +113,7 @@ class Frame(tk.Frame):
         self.mi_link.set('') #Para que ponga el campo vacio
         self.btnNuevo.config(state= "disabled")
         self.btndescargar.config(state= "normal")
+        self.btnVisualizar.config(state= "disabled")
    
     
     def datolink(self):
