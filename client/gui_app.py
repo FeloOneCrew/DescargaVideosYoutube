@@ -8,7 +8,8 @@ from turtle import bgcolor
 from pytube import YouTube
 import os
 import imutils
-from Model.descarga_dao import crear_tabla, borrar_tabla, Descarga, guardar, listar, eliminar
+from Model.descarga_dao import crear_tabla, borrar_tabla
+from Model.descarga_dao import Descarga, guardar, listar, eliminar
 import numpy as np
 
 def barra_menu(root):
@@ -153,6 +154,7 @@ class Frame(tk.Frame):
                 titulo = 'Descarga video'
                 mensaje = 'El video se descargó correctamente'
                 messagebox.showinfo(titulo, mensaje)
+                self.guardar_datos()
                 
             except:
                 titulo = 'Verificar conección'
